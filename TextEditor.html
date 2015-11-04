@@ -1,0 +1,51 @@
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TextEditor</title>
+</head>
+<script src="//tinymce.cachefly.net/4.2/tinymce.min.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+
+<div ng-controller="TextEditor" >
+		<input type="text" class="mceEditor" ng-model="textData">This will be an editor.
+	
+</div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://tinymce.cachefly.net/4.2/tinymce.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="/Tinymce_Assignment/textEditorController.js"></script>
+    <!--<script type="text/javascript" src="E:/Tinymce_Assignmenttinymce/js/tinymce/tinymce.min.js"></script>-->
+     
+</head>
+<body>
+	<div ng-app="textEditorApp">
+	<div ng-controller ="textEditorController">
+    <h1>TinyMCE Inline Editing Mode Guide</h1>
+    <form method="post">
+        <div id="myeditablediv" ng-modal="editText" >{{editText.text1}}</div>
+        <!-- <button ng-click="content()">submit</button> -->
+        <br>
+        <div id="myeditablediv1" ng-modal="editText1" >{{editText.text2}}</div>
+        <!-- <button ng-click="content1()">submit</button> -->
+        <br>
+        <div id="myeditablediv2" ng-modal="editText3" >{{editText.text3}}</div>
+        <!-- <button ng-click="content2()">submit</button> -->
+          <br>
+        <div id="myeditablediv3" ng-modal="editText4" >{{editText.text4}}</div>
+       <button ng-click="content()">save</button> 
+    </form>
+    </div>
+    </div>
+</body>
+</html>
+
+
